@@ -16,7 +16,7 @@ window.addEventListener("DOMContentLoaded", function() {
 
         setTimeout(function() {
             //your code to be executed after 1 second
-            location.href = "#intro";
+            location.reload();
         }, delayInMilliseconds);
     }
 
