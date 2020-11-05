@@ -33,29 +33,29 @@
 
 <body>
 
-    <!-- Load Facebook SDK for JavaScript -->
-    <div id="fb-root"></div>
+    <div class="fb-customerchat" page_id="<114521247007619>" minimized="true">
+    </div>
     <script>
         window.fbAsyncInit = function() {
             FB.init({
+                appId: '912333495590130',
+                autoLogAppEvents: true,
                 xfbml: true,
-                version: 'v8.0'
+                version: 'v2.11'
             });
         };
-
         (function(d, s, id) {
             var js, fjs = d.getElementsByTagName(s)[0];
-            if (d.getElementById(id)) return;
+            if (d.getElementById(id)) {
+                return;
+            }
             js = d.createElement(s);
             js.id = id;
-            js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
+            js.src = "https://connect.facebook.net/en_US/sdk.js";
             fjs.parentNode.insertBefore(js, fjs);
         }(document, 'script', 'facebook-jssdk'));
     </script>
 
-    <!-- Your Chat Plugin code -->
-    <div class="fb-customerchat" attribution=setup_tool page_id="114521247007619" theme_color="#13cf13" logged_in_greeting="Typically replies within a few hours" logged_out_greeting="Typically replies within a few hours">
-    </div>
     <!--==========================
     Header
   ============================-->
